@@ -11,6 +11,8 @@ public class Player_State_Jump : Player_State
 	public override void Enter()
 	{
 		base.Enter();
+		player.rb.AddForce(Vector2.up * player.jump_force, ForceMode2D.Impulse);
+		Debug.Log("jump enter");
 	}
 
 	public override void Exit()
@@ -21,5 +23,9 @@ public class Player_State_Jump : Player_State
 	public override void Update()
 	{
 		base.Update();
+		if (player.isGround && player.rb.velocity.y ==0)
+		{
+			player.state_machine.ChangeState(player.state_Idle);
+		}
 	}
 }
