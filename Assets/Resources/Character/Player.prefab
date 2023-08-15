@@ -36,7 +36,7 @@ Transform:
   - {fileID: 495897906560855400}
   - {fileID: 2420797201997655259}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1858342084691121300
 SpriteRenderer:
@@ -58,7 +58,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10756, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -145,7 +145,7 @@ MonoBehaviour:
   groundCheck_dist: 0.1
   groundMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
 --- !u!50 &6978029048107953778
 Rigidbody2D:
   serializedVersion: 4
@@ -205,8 +205,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.018001556, y: -0.40990424}
-  m_Size: {x: 0.2423935, y: 0.43765593}
+  m_Offset: {x: -0.018001556, y: -0.41105872}
+  m_Size: {x: 0.2423935, y: 0.4399649}
   m_Direction: 0
 --- !u!1 &3093257295463840897
 GameObject:
